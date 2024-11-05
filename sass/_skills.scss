@@ -90,6 +90,45 @@
           }
         }
 
+        .icono-tailwind {
+          background-image: url(../assets/languages/tailwind-css-svgrepo-com.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          width: 9.5rem;
+          height: 9.5rem;
+
+          &:hover {
+            background-image: url(../assets/languages/tailwind-css-color.svg);
+          }
+        }
+
+        .icono-sqlserver{
+          background-image: url(../assets/languages/microsoftsqlserver-white.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          width: 8.5rem;
+          height: 8.5rem;
+          
+          &:hover{
+            background-image: url(../assets/languages/microsoftsqlserver-color.svg);
+          }
+        }
+
+        .icono-mysql{
+          background-image: url(../assets/languages/mysql-white.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          width: 9.5rem;
+          height: 9.5rem;
+
+          &:hover{
+            background-image: url(../assets/languages/mysql-color.svg);
+          }
+        }
+
         .icono-express {
           background-image: url(../assets/languages/express.svg);
           background-repeat: no-repeat;
