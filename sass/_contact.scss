@@ -18,15 +18,12 @@
     font-size: 3rem;
     font-weight: 500;
     text-align: center;
-    color: white;
     color: colores.$normal;
   }
 
   .caja {
     width: 100%;
-    max-width: 70rem;
-    background: #1f1f1f;
-    background: #202020; /* prov */
+    max-width: 70rem; /* prov */
     background: colores.$fondo2; /* POV */
     border-radius: 1rem;
     padding: 3rem 2rem;
@@ -39,12 +36,9 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: 3rem;
-      gap: 2rem;
       gap: 1rem;
 
       .pregunta {
-        color: white;
         color: colores.$normal;
         font-size: 2.2rem;
         line-height: 4rem;
@@ -52,7 +46,6 @@
       .frase {
         font-size: 3rem;
         font-weight: 500;
-        color: colores.$azul-1;
         color: colores.$azul-2;
       }
       .boton {
@@ -61,7 +54,6 @@
         // align-self: center;
         border: 0.1rem solid colores.$azul-1;
         background-color: transparent;
-        color: white;
         color: colores.$normal;
         border-radius: 0.5rem;
         cursor: pointer;

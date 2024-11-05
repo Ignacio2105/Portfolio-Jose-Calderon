@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* MODO OSCURO///////////////////////////////////////////// */
 /* solo FONDO SCROLL */
 /* solo se usa en CARGA */
@@ -8,7 +9,7 @@
   align-items: center;
   height: 5rem;
   padding: 1rem 2rem;
-  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.0745098039); 
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.0745098039); /* PROV */
   background: #151515; /* PROV */
   top: 0;
   z-index: 1;
@@ -100,8 +101,8 @@
   height: 100vh;
   min-height: 60rem;
   padding: 3rem 1rem;
+  /* ////////////////////////////////////////////// */
 }
-
 .seccion1 .cajas {
   display: flex;
   flex-direction: column;
@@ -122,15 +123,14 @@
   animation: blink 0.5s infinite step-end alternate;
 }
 .seccion1 .caja1 .titulo--animada:after {
-  content: "Hola, soy José";
+  content: "Hola, Soy José";
   animation: saludo 3s;
 }
 .seccion1 .caja1 .cargo {
   font-size: 2rem;
   font-weight: 300;
-  margin-top: -0.5rem;
   border-right: 0.2rem solid white;
-  animation: blink 2s infinite step-end alternate;
+  animation: blink 0.5s infinite step-end alternate;
   color: white;
   width: max-content;
 }
@@ -145,12 +145,9 @@
   align-items: center; /* PROV */
 }
 .seccion1 .caja2__boton {
-  border: none;
   padding: 0.4rem 1.3rem;
-  border-radius: 0.25rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  color: white;
   color: white;
   text-decoration: none;
   background-color: transparent;
@@ -184,7 +181,7 @@
   font-size: 2rem;
 }
 .seccion1 .seccion1__imagen {
-  width: 15rem;
+  width: 25rem;
   height: 25rem;
   background: url(../assets/4.svg) no-repeat center;
   background-size: contain;
@@ -205,8 +202,6 @@
 }
 .seccion1 .contenedor-redes ul i {
   color: white;
-  color: white;
-  font-size: 1.8rem;
   font-size: 1.6rem;
 }
 .seccion1 .contenedor-redes ul i:hover {
@@ -225,45 +220,46 @@
     border-right: 0.3rem solid white;
   }
   5% {
-    content: "Ho";
+    content: "H";
   }
   10% {
-    content: "Hol";
+    content: "Ho";
   }
   15% {
-    content: "Hola";
+    content: "Hol";
   }
   20% {
-    content: "Hola,";
+    content: "Hola";
   }
   25% {
-    content: "Hola, ";
+    content: "Hola,";
   }
   30% {
-    content: "Hola, s";
+    content: "Hola, ";
   }
   35% {
-    content: "Hola, so";
+    content: "Hola, S";
   }
   40% {
-    content: "Hola, soy";
+    content: "Hola, So";
   }
   45% {
-    content: "Hola, soy ";
+    content: "Hola, Soy";
+  }
+  45% {
+    content: "Hola, Soy ";
   }
   50% {
-    content: "Hola, soy J";
+    content: "Hola, Soy J";
   }
   55% {
-    content: "Hola, soy Jo";
+    content: "Hola, Soy Jo";
   }
-
   60% {
-    content: "Hola, soy Jos";
+    content: "Hola, Soy Jos";
   }
-
   65% {
-    content: "Hola, soy José";
+    content: "Hola, Soy José";
     border-right: 0.3rem solid white;
   }
   70% {
@@ -308,58 +304,40 @@
     content: "Desarrollad";
   }
   33% {
-    content: "Desarrollado";
-  }
-  36% {
     content: "Desarrollador";
   }
-  39%{
+  36% {
     content: "Desarrollador ";
   }
+  39% {
+    content: "Desarrollador F";
+  }
   42% {
-    content: "Desarrollador W";
+    content: "Desarrollador Fr";
   }
   45% {
-    content: "Desarrollador We";
+    content: "Desarrollador Fro";
   }
   48% {
-    content: "Desarrollador Web";
+    content: "Desarrollador Fron";
   }
   51% {
-    content: "Desarrollador Web ";
+    content: "Desarrollador Front";
   }
   54% {
-    content: "Desarrollador Web F";
+    content: "Desarrollador Front-";
   }
   57% {
-    content: "Desarrollador Web Fu";
+    content: "Desarrollador Front-E";
   }
   60% {
-    content: "Desarrollador Web Ful";
+    content: "Desarrollador Front-En";
   }
   63% {
-    content: "Desarrollador Web Full";
-  }
-  66% {
-    content: "Desarrollador Web Full-";
-  }
-  69%{
-    content: "Desarrollador Web Full-S";
-  }
-  72%{
-    content: "Desarrollador Web Full-St";
-  }
-  75%{
-    content: "Desarrollador Web Full-Sta";
-  }
-  78%{
-    content: "Desarrollador Web Full-Stac";
-  }
-  81%{
-    content: "Desarrollador Web Full-Stack";
+    content: "Desarrollador Front-End";
   }
   100% {
-    content: "Desarrollador Web Full-Stack";
+    content: "Desarrollador Front-End";
   }
 }
 /* ///////////////////////////////////////// */
@@ -405,6 +383,7 @@
   .seccion1 {
     flex-direction: row;
     justify-content: space-around;
+    height: 50vh;
     height: 40rem;
     padding: 3rem;
     min-height: 50rem;
@@ -586,8 +565,6 @@
   width: 100%;
   border-radius: 1rem;
   overflow: hidden;
-  background: #1a1a1a;
-  background: #202020; /* POV */
   background: #1a1a1a; /* POV */
   padding: 3.5rem;
   display: flex;
@@ -608,12 +585,10 @@
   text-align: center;
   font-weight: 500;
   color: white;
-  color: white;
   color: #acaffe;
 }
 .seccion2 .caja__contenido p {
   text-align: center;
-  color: white;
   color: white;
 }
 .seccion2 .caja .caja__iconos {
@@ -1132,13 +1107,10 @@
   font-weight: 500;
   text-align: center;
   color: white;
-  color: white;
 }
 .seccion4 .caja {
   width: 100%;
-  max-width: 70rem;
-  background: #1f1f1f;
-  background: #202020; /* prov */
+  max-width: 70rem; /* prov */
   background: #1a1a1a; /* POV */
   border-radius: 1rem;
   padding: 3rem 2rem;
@@ -1150,12 +1122,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 3rem;
-  gap: 2rem;
   gap: 1rem;
 }
 .seccion4 .caja .contenido .pregunta {
-  color: white;
   color: white;
   font-size: 2.2rem;
   line-height: 4rem;
@@ -1163,7 +1132,6 @@
 .seccion4 .caja .contenido .frase {
   font-size: 3rem;
   font-weight: 500;
-  color: #8f88fe;
   color: #acaffe;
 }
 .seccion4 .caja .contenido .boton {
@@ -1171,7 +1139,6 @@
   font-size: 2rem;
   border: 0.1rem solid #8f88fe;
   background-color: transparent;
-  color: white;
   color: white;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -1529,12 +1496,9 @@ main {
 /* SCROLLL */
 .body::-webkit-scrollbar {
   background: #181818; /* PROV */
-  width: 1.5rem;
   width: 1.4rem;
 }
 
 .body::-webkit-scrollbar-thumb {
   background: #8f88fe; /* PROV */
 }
-
-/*# sourceMappingURL=style.css.map */
